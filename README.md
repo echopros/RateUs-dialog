@@ -18,6 +18,9 @@ Example:
 rateDialogHelper.showRateDialog(this);
 ```
 
+### Screenshots
+![Rate Us Dialog](promo/rate.png "")
+
 ### Integration
 
 Add to your top-level gradle file:
@@ -73,7 +76,7 @@ setTitleAppNameColor(int color) - Name of application will be painted in this co
 setTitleColor(int color) - rate title dialog color
 
 setCancelColor(int color) - cancel btn color
-setRateColor(int color) rate/send to developer btns colors
+setRateColor(int color) - rate/send to developer btns colors
 setFeedbackEmail(String email) - if user press less then 3.1 stars, than he is navigated to email app to send you a review, not google play. You specify an email here
 
 setSessionAmount(int sessionAmount) - specify min sessions before dialog shoud be shown
