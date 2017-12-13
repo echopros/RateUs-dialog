@@ -83,6 +83,8 @@ We use builder pattern to set proper parameters, but, anyway Rate Dialog will wo
 So we can specify:
 ```
 setShowEveryTime(boolean b) - show dialog every time, usefull for testing
+setAppName(String name) - set App name, that would be displayed in rate us dialog
+setFeedbackEmail(String email) - if user press less then 3.1 stars, than he is navigated to email app to send you a review, not google play. You specify an email here
 
 setRatingColorActive(int color) - color of active star
 setRatingColorInactive(int color) - color of inactive star
@@ -91,7 +93,6 @@ setTitleColor(int color) - rate title dialog color
 
 setCancelColor(int color) - cancel btn color
 setRateColor(int color) - rate/send to developer btns colors
-setFeedbackEmail(String email) - if user press less then 3.1 stars, than he is navigated to email app to send you a review, not google play. You specify an email here
 
 setSessionAmount(int sessionAmount) - specify min sessions before dialog shoud be shown
 setDayAmount(int day amount) - specify min day amount before dialog shoud be shown

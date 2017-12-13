@@ -49,6 +49,7 @@ public class RateDialogHelper {
     private int colorActive = -1;
 
     private String email;
+    private String name = "The app";
 
     private boolean showEveryTime = false;
 
@@ -103,6 +104,11 @@ public class RateDialogHelper {
 
         public Builder setSessionAmount(int sessionAmount){
             rateDialogHelper.sessionAmount = sessionAmount;
+            return this;
+        }
+
+        public Builder setAppName(String name){
+            rateDialogHelper.name = name;
             return this;
         }
 
@@ -257,7 +263,7 @@ public class RateDialogHelper {
             final SpannableStringBuilder sb = new SpannableStringBuilder();
             sb.append(getContext().getResources().getString(R.string.title_rating_pref));
             sb.append(" ");
-            SpannableString s1 = new SpannableString(getContext().getResources().getString(R.string.app_name));
+            SpannableString s1 = new SpannableString(name);
             s1.setSpan(new ForegroundColorSpan(colorTitleAppName), 0, s1.length(), 0);
             s1.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), 0, s1.length(), 0);
 

@@ -17,7 +17,7 @@ ext {
     siteUrl = 'https://github.com/spartacus777/RateUs-dialog'
     gitUrl = 'https://github.com/spartacus777/RateUs-dialog.git'
 
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.5'
 
     developerId = 'Spartacus777'
     developerName = 'Anton Kizema'

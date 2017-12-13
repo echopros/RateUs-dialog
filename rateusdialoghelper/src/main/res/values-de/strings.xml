@@ -1,0 +1,10 @@
+﻿<resources>
+    <string name="send_feedback_title">Feedback vom Entwickler..</string>
+    <string name="title_rating_pref">Magst du</string>
+    <string name="title_rating_suf">Bitte bewerten Sie uns!</string>
+    <string name="send_feedback">Feedback hinterlassen</string>
+    <string name="cancel">Rückgängig machen</string>
+    <string name="rate">Bewerten</string>
+    <string name="whould_you_like_to_rate_app">Möchten Sie die Anwendung evaluieren?</string>
+    <string name="send_via">E-Mail senden</string>
+</resources>

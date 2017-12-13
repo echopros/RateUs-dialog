@@ -1,0 +1,11 @@
+﻿<resources>
+    <string name="send_feedback_title">Comentarios del desarrollador.</string>
+    <string name="title_rating_pref">Te gusta</string>
+    <string name="title_rating_suf">Por favor califícanos!</string>
+    <string name="send_feedback">Deja tus comentarios</string>
+    <string name="cancel">Deshacer</string>
+    <string name="rate">Tasa</string>
+    <string name="whould_you_like_to_rate_app">¿Quieres evaluar la aplicación?</string>
+    <string name="send_via">Enviar correo electrónico</string>
+
+</resources>

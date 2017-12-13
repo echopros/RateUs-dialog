@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 .setRatingColorInactive(colorInactive)
                 .setTitleAppNameColor(colorActive)
                 .setCancelColor(colorInactive)
+                .setAppName(getResources().getString(R.string.app_name))
                 .setRateColor(colorActive)
                 .setFeedbackEmail("someamil@gmail.com");
 

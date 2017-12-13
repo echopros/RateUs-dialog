@@ -1,0 +1,10 @@
+﻿<resources>
+    <string name="send_feedback_title">Feedback mula sa developer ..</string>
+    <string name="title_rating_pref">Gusto mo ba</string>
+    <string name="title_rating_suf">Paki-rate kami!</string>
+    <string name="send_feedback">Mag-iwan ng feedback</string>
+    <string name="cancel">Undo</string>
+    <string name="rate">Rate</string>
+    <string name="whould_you_like_to_rate_app">Nais mo bang pag-aralan ang application?</string>
+    <string name="send_via">Magpadala ng e-mail</string>
+</resources>
