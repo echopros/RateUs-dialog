@@ -48,6 +48,8 @@ public class RateDialogHelper {
     private int colorInactive = -1;
     private int colorActive = -1;
 
+    private int defaultStars = 3;
+
     private String email;
     private String name = "The app";
 
@@ -114,6 +116,11 @@ public class RateDialogHelper {
 
         public Builder setDayAmount(int dayAmount){
             rateDialogHelper.dayAmount = dayAmount;
+            return this;
+        }
+
+        public Builder setDefaultStars(int stars){
+            rateDialogHelper.defaultStars = stars;
             return this;
         }
 
@@ -287,11 +294,11 @@ public class RateDialogHelper {
                 Helper.setDrawableColor(layerDrawable1.getDrawable(1), colorActive);
             }
 
+            ratingBar.setProgress(defaultStars * ratingBar.getMax()/5);
             ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
                 @Override
                 public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
                     if (fromUser) {
-                        btnRate.setEnabled(true);
                         likes = rating;
                     }
                 }

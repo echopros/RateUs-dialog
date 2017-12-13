@@ -90,6 +90,7 @@ setRatingColorActive(int color) - color of active star
 setRatingColorInactive(int color) - color of inactive star
 setTitleAppNameColor(int color) - Name of application will be painted in this color
 setTitleColor(int color) - rate title dialog color
+setDefaultStars(int stars) - set mark (1..5) which user would see initially. Default is 3.
 
 setCancelColor(int color) - cancel btn color
 setRateColor(int color) - rate/send to developer btns colors
