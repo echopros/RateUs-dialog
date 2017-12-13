@@ -1,6 +1,8 @@
 # rate Us Dialog
 
 Customiable RateDialog for any android app.
+If User rates 4 or 5, he is navigated to google play.
+If he gave you 3 or less - he is navigated to email app, and asked to write a reason of such mark.
 Example:
 
 ```
@@ -13,7 +15,7 @@ Example:
                 .setFeedbackEmail("developeremail@gmail.com")
                 .build();
 
-        rateDialogHelper.showRateDialog(this);
+rateDialogHelper.showRateDialog(this);
 ```
 
 ### Integration
@@ -43,18 +45,18 @@ compile 'rateusdialoghelper:rateusdialoghelper:1.0.2@aar'
 Call from Application class:
 
 ```
-        RateDialogHelper.onNewSession(context);
+RateDialogHelper.onNewSession(context);
 ```
 
 Call from activity you want the dialog to appear:
 
 ```
- RateDialogHelper rateDialogHelper = new RateDialogHelper.Builder()
+RateDialogHelper rateDialogHelper = new RateDialogHelper.Builder()
                 .setShowEveryTime(true)
                 ...
                 .build();
 
-        rateDialogHelper.showRateDialog(this);
+rateDialogHelper.showRateDialog(this);
 ```
 
 ## Configurations
@@ -64,11 +66,23 @@ We use builder pattern to set proper parameters, but, anyway Rate Dialog will wo
 So we can specify:
 ```
 setShowEveryTime(boolean b) - show dialog every time, usefull for testing
+
+setRatingColorActive(int color) - color of active star
+setRatingColorInactive(int color) - color of inactive star
+setTitleAppNameColor(int color) - Name of application will be painted in this color
+setTitleColor(int color) - rate title dialog color
+
+setCancelColor(int color) - cancel btn color
+setRateColor(int color) rate/send to developer btns colors
+setFeedbackEmail(String email) - if user press less then 3.1 stars, than he is navigated to email app to send you a review, not google play. You specify an email here
+
+setSessionAmount(int sessionAmount) - specify min sessions before dialog shoud be shown
+setDayAmount(int day amount) - specify min day amount before dialog shoud be shown
 ```
 
 ## Authors
 
-* **Anton Kizema** *
+* **Anton Kizema**
 
 ## License
 
