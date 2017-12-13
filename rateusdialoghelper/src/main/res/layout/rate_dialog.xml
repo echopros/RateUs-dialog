@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="14dp"
+        android:id="@+id/tvTitle"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        style="@style/TextSmallMedium"
+        android:layout_gravity="center"
+        android:text="@string/whould_you_like_to_rate_app"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:numStars="5"
+        android:stepSize="0"
+        android:layout_gravity="center_horizontal"
+        style="@style/myRatingBar"
+        android:id="@+id/ratingBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/TextSmallMedium"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/btnCancel"
+            android:alpha="0.5"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:text="@string/cancel"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnRate"
+            style="@style/TextSmallMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/rate"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

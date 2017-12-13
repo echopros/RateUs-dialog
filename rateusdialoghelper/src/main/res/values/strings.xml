@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RateUsDialogHelper</string>
+
+    <string name="send_feedback_title">Send feedback to developer..</string>
+    <string name="title_rating_pref">Do you like</string>
+    <string name="title_rating_suf">Rate us please!</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="cancel">Cancel</string>
+    <string name="rate">Rate</string>
+    <string name="whould_you_like_to_rate_app">Would you like to rate this app?</string>
+    <string name="send_via">Send Email via</string>
+</resources>
