@@ -1,6 +1,7 @@
 # rate Us Dialog
 
 Customiable RateDialog for any android app.
+
 If User rates 4 or 5, he is navigated to google play.
 If he gave you 3 or less - he is navigated to email app, and asked to write a reason of such mark.
 Example:
