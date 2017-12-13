@@ -19,11 +19,20 @@ rateDialogHelper.showRateDialog(this);
 ```
 
 ### Screenshots
-![Rate Us Dialog](promo/rate.png "" width="350")
 
-![Rate Us Dialog](promo/rate1.png "" width="200")
-![Rate Us Dialog](promo/rate2.png "" width="200")
-![Rate Us Dialog](promo/rate3.png "" width="200")
+<p align="center">
+  <img src="promo/rate.png" width="350"/>
+</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><img src="promo/rate1.png" width="350"/></td>
+            <td><img src="promo/rate2.png" width="350"/></td>
+            <td><img src="promo/rate3.png" width="350"/></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Integration
 
