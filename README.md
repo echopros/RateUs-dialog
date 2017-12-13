@@ -21,18 +21,17 @@ rateDialogHelper.showRateDialog(this);
 
 ### Screenshots
 
-<p align="center">
-  <img src="promo/rate.png" width="350"/>
-</p>
-
 <table>
-    <tbody>
-        <tr>
-            <td><img src="promo/rate1.png" width="350"/></td>
-            <td><img src="promo/rate2.png" width="350"/></td>
-            <td><img src="promo/rate3.png" width="350"/></td>
-        </tr>
-    </tbody>
+<tr>
+ <td> <img src="promo/rate.png" /></td>
+  <td><img src="promo/rate1.png" width="350"/></td>
+</tr>
+<tr>
+  <td><img src="promo/rate2.png" width="350"/></td>
+</tr>
+ <tr>
+ <td><img src="promo/rate3.png" width="350"/></td>
+</tr>
 </table>
 
 ### Integration
