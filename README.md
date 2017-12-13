@@ -22,15 +22,16 @@ rateDialogHelper.showRateDialog(this);
 ### Screenshots
 
 <table>
+    <col width="50%">
 <tr>
- <td> <img src="promo/rate.png" /></td>
-  <td><img src="promo/rate1.png" width="350"/></td>
+  <th width="50%" rowspan="3"> <img src="promo/rate.png" /></th>
+  <td width="50%"><img src="promo/rate1.png"/></td>
 </tr>
 <tr>
-  <td><img src="promo/rate2.png" width="350"/></td>
+  <td><img src="promo/rate3.png"/></td>
 </tr>
  <tr>
- <td><img src="promo/rate3.png" width="350"/></td>
+ <td><img src="promo/rate2.png"/></td>
 </tr>
 </table>
 
