@@ -14,10 +14,10 @@ ext {
 
     libraryDescription = 'Rate us dlg with customizations'
 
-    siteUrl = 'no site'
-    gitUrl = 'https://github.com/ptyagicodecamp/webview-overlay.git'
+    siteUrl = 'https://github.com/spartacus777/RateUs-dialog'
+    gitUrl = 'https://github.com/spartacus777/RateUs-dialog.git'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.2'
 
     developerId = 'Spartacus777'
     developerName = 'Anton Kizema'
