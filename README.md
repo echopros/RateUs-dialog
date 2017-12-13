@@ -7,13 +7,17 @@ If he gave you 3 or less - he is navigated to email app, and asked to write a re
 Example:
 
 ```
- RateDialogHelper rateDialogHelper = new RateDialogHelper.Builder()
-                .setRatingColorActive(App.getColorTheme().mainColor)
-                .setRatingColorInactive(App.getColorTheme().secondaryColor)
-                .setTitleAppNameColor(App.getColorTheme().mainColor)
-                .setCancelColor(App.getColorTheme().secondaryColor)
-                .setRateColor(App.getColorTheme().mainColor)
-                .setFeedbackEmail("developeremail@gmail.com")
+int colorInactive = App.getContext().getResources().getColor(R.color.colorPrimaryDark);
+int colorActive = App.getContext().getResources().getColor(R.color.colorAccent);
+
+RateDialogHelper rateDialogHelper = new RateDialogHelper.Builder()
+                .setRatingColorActive(colorActive)
+                .setRatingColorInactive(colorInactive)
+                .setTitleAppNameColor(colorActive)
+                .setCancelColor(colorInactive)
+                .setAppName(getResources().getString(R.string.app_name))
+                .setRateColor(colorActive)
+                .setFeedbackEmail("youremail@gmail.com")
                 .build();
 
 rateDialogHelper.showRateDialog(this);
