@@ -17,7 +17,7 @@ ext {
     siteUrl = 'https://github.com/spartacus777/RateUs-dialog'
     gitUrl = 'https://github.com/spartacus777/RateUs-dialog.git'
 
-    libraryVersion = '1.0.8'
+    libraryVersion = '1.0.19'
 
     developerId = 'Spartacus777'
     developerName = 'Anton Kizema'
@@ -41,6 +41,12 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+
+    lintOptions {
+        checkReleaseBuilds true
+        abortOnError false
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -49,44 +55,11 @@ android {
     }
 }
 
-//bintray {
-//    user = 'spartacus777'
-//    key = '2b95f463714eeabf5ebbba6adb3bfd3db2dc37ff'
-//
-//    pkg {
-//        repo = 'rateusdialoghelper'
-//        name = 'Rate Dialog'
-//        userOrg = 'Spartacus777'
-//        licenses = ['Apache-2.0']
-//        vcsUrl = 'https://github.com/bintray/gradle-bintray-plugin.git'
-//
-//        version {
-//            name = '1.0.0'
-//            desc = 'All works in first release'
-//            released  = new Date()
-//            vcsTag = '1.0.0'
-//            attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
-//        }
-//    }
-//
-//    publications = ['MyPublication']
-//}
-
-//publishing {
-//    publications {
-//        MyPublication(MavenPublication) {
-//            from components.java
-//            groupId 'rateusdialoghelper'
-//            artifactId 'rateusdialoghelper'
-//            version '1.0'
-//        }
-//    }
-//}
-
-//task generateSourcesJar(type: Jar) {
-//    from android.sourceSets.main.java.srcDirs
-//    classifier 'sources'
-//}
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

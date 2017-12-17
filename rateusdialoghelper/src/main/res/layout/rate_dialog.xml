@@ -38,18 +38,18 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnCancel"
             style="@style/TextSmallMedium"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:textSize="14dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/btnCancel"
-            android:alpha="0.5"
-            android:padding="10dp"
-            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
             android:text="@string/cancel"
-            android:layout_height="wrap_content" />
+            android:textSize="14dp" />
 
         <Button
             android:id="@+id/btnRate"

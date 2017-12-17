@@ -257,7 +257,7 @@ public class RateDialogHelper {
 
         private Button btnCancel;
 
-        private Button btnRate;
+        private Button btnRates;
 
         private TextView tvTitle;
 
@@ -273,7 +273,7 @@ public class RateDialogHelper {
         private void init() {
             View dialogView = LayoutInflater.from(activity).inflate(R.layout.rate_dialog, null, false);
             tvTitle = (TextView) dialogView.findViewById(R.id.tvTitle);
-            btnRate = (Button) dialogView.findViewById(R.id.btnRate);
+            btnRates = (Button) dialogView.findViewById(R.id.btnRate);
             btnCancel = (Button) dialogView.findViewById(R.id.btnCancel);
             ratingBar = (RatingBar) dialogView.findViewById(R.id.ratingBar);
 
@@ -319,8 +319,16 @@ public class RateDialogHelper {
             dialog.setView(dialogView);
             dialog.show();
 
-            btnRate.setTextColor(colorRate);
-            btnRate.setOnClickListener(new View.OnClickListener() {
+            btnCancel.setTextColor(colorCancel);
+            btnCancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialog.dismiss();
+                }
+            });
+
+            btnRates.setTextColor(colorRate);
+            btnRates.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if (likes >= MIN_STARS_RATE) {
@@ -343,13 +351,7 @@ public class RateDialogHelper {
                 }
             });
 
-            btnCancel.setTextColor(colorCancel);
-            btnCancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    dialog.dismiss();
-                }
-            });
+
         }
     }
 
