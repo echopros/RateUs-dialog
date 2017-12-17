@@ -92,6 +92,17 @@ public class RateDialogHelper {
         return shouldShowDialog;
     }
 
+    /**
+     * @return show dialog immediatly
+     */
+    public void showRateDialogImmidiatly(Activity activity) {
+        showDialog(activity);
+
+        saveNewSessionNum(0);
+        long date = getDateNum();
+        saveDayWeOpenedRateDialog(date);
+    }
+
     private void showDialog(final Activity activity) {
         //show rate dialog
         RateDialog rateDialog = new RateDialog(activity);
