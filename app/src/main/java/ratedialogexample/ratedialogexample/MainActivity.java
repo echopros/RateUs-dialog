@@ -3,6 +3,7 @@ package ratedialogexample.ratedialogexample;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import rateusdialoghelper.RateDialogHelper;
 
@@ -13,6 +14,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        View btnShow = findViewById(R.id.btnShow);
+        btnShow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                create().showRateDialogImmidiatly(MainActivity.this);
+            }
+        });
+
+        create().showRateDialog(this);
+    }
+
+    private RateDialogHelper create(){
         int colorInactive = Color.parseColor("#c59d23");
         int colorActive = Color.parseColor("#f8c017");
 
@@ -30,6 +43,6 @@ public class MainActivity extends AppCompatActivity {
             rateDialogHelperbuilder.setShowEveryTime(true);
         }
 
-        rateDialogHelperbuilder.build().showRateDialog(this);
+        return rateDialogHelperbuilder.build();
     }
 }

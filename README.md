@@ -58,7 +58,7 @@ allprojects {
 
 Add to app.gradle:
 ```
-compile 'rateusdialoghelper:rateusdialoghelper:1.0.7@aar'
+compile 'rateusdialoghelper:rateusdialoghelper:1.0.8@aar'
 ```
 
 ### Contract
