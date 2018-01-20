@@ -99,6 +99,8 @@ setDefaultStars(int stars) - set mark (1..5) which user would see initially. Def
 setCancelColor(int color) - cancel btn color
 setRateColor(int color) - rate/send to developer btns colors
 
+setRateCallback(OnRateCallback callback) - callback when user clicked go to Google play, or go to mail app to send review.
+
 setSessionAmount(int sessionAmount) - specify min sessions before dialog shoud be shown
 setDayAmount(int day amount) - specify min day amount before dialog shoud be shown
 ```
