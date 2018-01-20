@@ -50,6 +50,8 @@ public class RateDialogHelper {
 
     private int defaultStars = 3;
 
+    private OnRateCallback onRateCallback;
+
     private String email;
     private String name = "The app";
 
@@ -57,6 +59,11 @@ public class RateDialogHelper {
 
     private RateDialogHelper() {
         isRated = isRateDone();
+    }
+
+    public interface OnRateCallback{
+        void goToGooglePlay();
+        void sendDeveloperAFeedback();
     }
 
     /**
@@ -113,6 +120,11 @@ public class RateDialogHelper {
 
         public Builder(){
             rateDialogHelper = new RateDialogHelper();
+        }
+
+        public Builder setRateCallback(OnRateCallback rateCallback){
+            rateDialogHelper.onRateCallback = rateCallback;
+            return this;
         }
 
         public Builder setSessionAmount(int sessionAmount){
@@ -341,6 +353,10 @@ public class RateDialogHelper {
                         } catch (android.content.ActivityNotFoundException anfe) {
                             activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MARKET_BROWSER_URL_PREFIX + appPackageName)));
                         }
+
+                        if (onRateCallback != null) {
+                            onRateCallback.goToGooglePlay();
+                        }
                     } else {
                         //open secondary dialog
                         new FeedbackDialog(activity);
@@ -389,6 +405,10 @@ public class RateDialogHelper {
                     sendReport(activity, "Feedback from (" + android.os.Build.MODEL + ")", "Give us feedback!", email);
                     saveRateDone(true);
                     alertDialog.dismiss();
+
+                    if (onRateCallback != null) {
+                        onRateCallback.sendDeveloperAFeedback();
+                    }
                 }
             });
 

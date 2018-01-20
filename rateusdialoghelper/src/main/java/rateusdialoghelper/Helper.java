@@ -6,6 +6,11 @@ import android.graphics.drawable.Drawable;
 public class Helper {
 
     static public void setDrawableColor(Drawable drawable, int color) {
-        drawable.mutate().setColorFilter(color, PorterDuff.Mode.SRC_IN);
+        try {
+            drawable.mutate().setColorFilter(color, PorterDuff.Mode.SRC_IN);
+        } catch (Throwable t){
+            //For fucking fucking fucking phones
+            drawable.setColorFilter(color, PorterDuff.Mode.SRC_IN);
+        }
     }
 }
